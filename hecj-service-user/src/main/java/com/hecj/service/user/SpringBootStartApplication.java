@@ -1,4 +1,4 @@
-package com.hecj.eureka;
+package com.hecj.service.user;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -10,6 +10,6 @@ public class SpringBootStartApplication extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(EurekaApplication.class);
+        return builder.sources(UserApplication.class);
     }
 }

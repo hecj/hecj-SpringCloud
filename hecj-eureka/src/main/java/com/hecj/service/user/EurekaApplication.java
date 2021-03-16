@@ -1,4 +1,4 @@
-package com.hecj.eureka;
+package com.hecj.service.user;
 
 
 import org.springframework.boot.SpringApplication;
