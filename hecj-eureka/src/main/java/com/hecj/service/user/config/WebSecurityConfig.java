@@ -20,6 +20,5 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin()
                 .and()
                 .httpBasic();
-        super.configure(http);
     }
 }

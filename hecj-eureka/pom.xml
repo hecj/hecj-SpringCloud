@@ -6,7 +6,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>hecj-eureka</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<properties>
@@ -14,46 +14,15 @@
 		<maven.javadoc.failOnError>false</maven.javadoc.failOnError>
 	</properties>
 
-	<profiles>
-		<profile>
-			<id>local</id>
-			<properties>
-				<package.environment>local</package.environment>
-			</properties>
-		</profile>
-		<profile>
-			<id>dev</id>
-			<properties>
-				<package.environment>dev</package.environment>
-			</properties>
-		</profile>
-		<profile>
-			<id>test</id>
-			<properties>
-				<package.environment>test</package.environment>
-			</properties>
-		</profile>
-		<profile>
-			<id>www</id>
-			<properties>
-				<package.environment>www</package.environment>
-			</properties>
-		</profile>
-	</profiles>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
+		<!--服务注入验证-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -63,32 +32,10 @@
 	</dependencies>
 
 	<build>
-		<resources>
-			<resource>
-				<directory>${basedir}/src/main/resources</directory>
-				<filtering>true</filtering>
-				<excludes>
-					<exclude>env/*.*</exclude>
-				</excludes>
-			</resource>
-		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<configuration>
-					<detail>true</detail>
-					<includeEmptyDirs>true</includeEmptyDirs>
-					<overwrite>true</overwrite>
-					<encoding>UTF-8</encoding>
-					<filters>
-						<filter>${basedir}/src/main/resources/env/${package.environment}.properties</filter>
-					</filters>
-				</configuration>
 			</plugin>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
