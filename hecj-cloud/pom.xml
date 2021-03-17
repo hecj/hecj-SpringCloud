@@ -15,7 +15,9 @@
 
   <modules>
     <module>../hecj-eureka</module>
-    <module>../hecj-service-user</module>
+    <module>../hecj-user-service</module>
+    <module>../hecj-user-model</module>
+    <module>../hecj-article-service</module>
   </modules>
 
   <properties>
@@ -46,7 +48,7 @@
     <org.quartz-scheduler>2.2.3</org.quartz-scheduler>
     <org.apache.httpcomponents>4.4.1</org.apache.httpcomponents>
     <maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
-
+    <lombok.version>1.16.14</lombok.version>
   </properties>
 
   <dependencyManagement>
@@ -256,6 +258,11 @@
         <version>${spring-cloud.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${lombok.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
