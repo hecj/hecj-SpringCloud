@@ -18,6 +18,7 @@
     <module>../hecj-user-service</module>
     <module>../hecj-user-model</module>
     <module>../hecj-article-service</module>
+    <module>../hecj-gateway</module>
   </modules>
 
   <properties>

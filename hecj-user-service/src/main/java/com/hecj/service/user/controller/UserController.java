@@ -13,7 +13,7 @@ public class UserController {
     @Autowired
     ServerConfig serverConfig;
 
-    @RequestMapping("/api/user")
+    @RequestMapping("/api/user/detail")
     public String user(){
         return serverConfig.getUrl()+"###"+ UserController.class.getName();
     }

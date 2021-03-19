@@ -1,0 +1,26 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: hecj-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true  #开启注册中心路由功能
+#          lower-case-service-id: true
+      routes:
+        - id: user-service
+          uri: lb://hecj-user-service #此处如果有问题，请注意依赖spring-cloud-starter-netflix-eureka-client依赖不能错
+          predicates:
+            - Path=/api/user/**
+        - id: article-service
+          uri: lb://hecj-article-service
+          predicates:
+            - Path=/api/article/**
+eureka:
+  client:
+    service-url:
+      register-with-eureka: true
+      fetch-registry: true
+      defaultZone: http://hecj:hecj@localhost:10000/eureka
