@@ -29,6 +29,7 @@ SpringCloud2.x集成
   新网关1：
   spring-cloud-starter-gateway
   新网关2：
+  spring-cloud-starter-netflix-zuul 2.2.0  spring-boot-starter-parent 2.2.2.RELEASE
   旧包：
   spring-cloud-starter-zuul
  
