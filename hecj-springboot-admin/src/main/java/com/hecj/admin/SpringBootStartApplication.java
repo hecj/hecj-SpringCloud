@@ -1,4 +1,4 @@
-package com.hecj.gateway;
+package com.hecj.admin;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -10,6 +10,6 @@ public class SpringBootStartApplication extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(GatewayApplication.class);
+        return builder.sources(AdminApplication.class);
     }
 }

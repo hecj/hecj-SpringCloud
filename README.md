@@ -32,4 +32,9 @@ SpringCloud2.x集成
   旧包：
   spring-cloud-starter-zuul
  
+#### 6.SpringBootAdmin服务监控
+  spring-boot-admin-starter-server 2.2.0
+  spring-boot-admin-starter-client 2.2.0
+  项：hecj-springboot-admin
+
 
