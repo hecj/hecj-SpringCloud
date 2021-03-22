@@ -1,4 +1,4 @@
-package com.hecj.service.user.config;
+package com.hecj.config.server.config;
 
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;

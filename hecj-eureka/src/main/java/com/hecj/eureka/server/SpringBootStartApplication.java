@@ -1,4 +1,4 @@
-package com.hecj.service.user;
+package com.hecj.eureka.server;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
