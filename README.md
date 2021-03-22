@@ -1,8 +1,8 @@
 
 # hecj-cloud
 SpringCloud2.x集成  
-spring-boot-starter-parent 2.2.5.RELEASE  
-spring-cloud-dependencies Hoxton.SR3
+spring-boot-starter-parent 2.3.1.RELEASE  
+spring-cloud-dependencies Hoxton.SR8
 
 ## 功能：
 #### 1.Eureka集群
@@ -21,7 +21,7 @@ spring-cloud-dependencies Hoxton.SR3
   旧包：  
   spring-cloud-starter-feign  
   
-#### 3.系统监控监控
+#### 3.系统监控
   spring-boot-starter-actuator
   
 #### 4.Web安全认证
@@ -31,14 +31,13 @@ spring-cloud-dependencies Hoxton.SR3
   新网关1：  
   spring-cloud-starter-gateway  
   新网关2：  
-  spring-cloud-starter-netflix-zuul 2.2.0   
-  spring-boot-starter-parent 2.2.2.RELEASE  
+  spring-cloud-starter-netflix-zuul  
   旧包：  
   spring-cloud-starter-zuul  
  
 #### 6.SpringBootAdmin服务监控
-  spring-boot-admin-starter-server 2.2.0  
-  spring-boot-admin-starter-client 2.2.0  
+  spring-boot-admin-starter-server 2.3.1  
+  spring-boot-admin-starter-client 2.3.1   
   项目：hecj-springboot-admin  
 
 
