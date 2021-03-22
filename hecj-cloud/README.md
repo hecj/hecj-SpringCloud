@@ -5,7 +5,7 @@ spring-boot-starter-parent 2.3.1.RELEASE
 spring-cloud-dependencies Hoxton.SR8
 
 ## 功能：
-#### 1.Eureka集群
+#### 1.Eureka注册中心
   新包：  
   spring-cloud-starter-netflix-eureka-server  
   spring-cloud-starter-netflix-eureka-client  
@@ -39,5 +39,9 @@ spring-cloud-dependencies Hoxton.SR8
   spring-boot-admin-starter-server 2.3.1  
   spring-boot-admin-starter-client 2.3.1   
   项目：hecj-springboot-admin  
+  
+#### 7.SpringCloud配置中心
+    spring-cloud-config-server   
+    项目：hecj-config-server  
 
 
