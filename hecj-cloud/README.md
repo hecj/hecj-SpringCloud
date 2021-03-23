@@ -35,7 +35,7 @@ spring-cloud-dependencies Hoxton.SR8
   旧包：  
   spring-cloud-starter-zuul  
  
-#### 6.SpringBootAdmin服务监控
+#### 6.SpringBootAdmin监控管理
   spring-boot-admin-starter-server 2.3.1  
   spring-boot-admin-starter-client 2.3.1   
   项目：hecj-springboot-admin  
@@ -57,4 +57,9 @@ spring-cloud-dependencies Hoxton.SR8
 | 8 | hecj-user-model | 用户模型 |
 | 9 | hecj-user-service | 用户服务 |
 | 10 | hecj-article-service | 文章服务 |
+
+
+## 总结
+##### 1.配置文件加载顺序
+    bootstrap > 远程config > application
 
