@@ -46,7 +46,7 @@ spring-cloud-dependencies Hoxton.SR8
 
 ## 项目结构
 | 编号 | 项目| 备注|
-| :-----:| :----: | :----: |
+| :-----:| :---- | :---- |
 | 1 | hecj-cloud | 父模块 |
 | 2 | hecj-eureka | 注册中心 |
 | 3 | hecj-gateway | 网关 |
