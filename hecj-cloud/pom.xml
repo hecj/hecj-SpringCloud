@@ -22,6 +22,7 @@
     <module>../hecj-gateway-zuul</module>
     <module>../hecj-springboot-admin</module>
     <module>../hecj-config-server</module>
+    <module>../hecj-config-client</module>
   </modules>
 
   <properties>
