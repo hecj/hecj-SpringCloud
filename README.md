@@ -4,7 +4,7 @@ SpringCloud2.x集成
 spring-boot-starter-parent 2.3.1.RELEASE  
 spring-cloud-dependencies Hoxton.SR8
 
-## 功能：
+## 功能
 #### 1.Eureka注册中心
   新包：  
   spring-cloud-starter-netflix-eureka-server  
@@ -40,8 +40,21 @@ spring-cloud-dependencies Hoxton.SR8
   spring-boot-admin-starter-client 2.3.1   
   项目：hecj-springboot-admin  
   
-#### 7.SpringCloud配置中心
-    spring-cloud-config-server   
-    项目：hecj-config-server  
+#### 7.SpringCloud配置中心  
+   spring-cloud-config-server   
+   项目：hecj-config-server  
 
+## 项目结构
+| 编号 | 项目| 备注|
+| :-----:| :----: | :----: |
+| 1 | hecj-cloud | 父模块 |
+| 2 | hecj-eureka | 注册中心 |
+| 3 | hecj-gateway | 网关 |
+| 4 | hecj-gateway-zuul | zuul网关 |
+| 5 | hecj-config-server | 配置中心 |
+| 6 | springcloud-config-repo | 配置文件 |
+| 7 | hecj-springboot-admin | 监控管理 |
+| 8 | hecj-user-model | 用户模型 |
+| 9 | hecj-user-service | 用户服务 |
+| 10 | hecj-article-service | 文章服务 |
 
