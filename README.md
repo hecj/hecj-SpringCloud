@@ -1,5 +1,5 @@
 
-# hecj-cloud
+# hecj-SpringCloud
 SpringCloud2.x集成  
 spring-boot-starter-parent 2.3.1.RELEASE  
 spring-cloud-dependencies Hoxton.SR8
